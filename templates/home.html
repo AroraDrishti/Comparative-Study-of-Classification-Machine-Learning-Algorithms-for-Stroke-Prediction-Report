@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <center>
+            <h1> STROKE PREDICTION </h1>
+            <form method="POST", action="{{url_for('home')}}">
+                <b>
+                    gender : <input type="number" name="gender" placeholder="Enter 0 (for female), 1 (for male), 2 (for others)">
+                    age : <input type="number" name="age" placeholder="Enter age">
+                    hypertension : <input type="number" name="hypertension" placeholder="Enter 0 (for no), 1 (for yes)">
+                    heartdisease : <input type="number" name="heartdisease" placeholder="Enter 0 (for no), 1 (for yes)">
+                    evermarried : <input type="number" name="evermarried" placeholder="Enter 0 (for no), 1 (for yes)">
+                    worktype : <input type="number" name="worktype" placeholder="Enter 0 (for government job), 1 (for never worked), 2 (for private), 3 (for self-employed), 4 (for children)">
+                    residencetype : <input type="number" name="residencetype" placeholder="Enter 0 (for rural) ,1 (for urban)">
+                    avgglucoselevel : <input type="number" name="avgglucoselevel" placeholder="Enter Average Glucose Level">
+                    bmi : <input type="number" name="bmi" placeholder="Enter BMI">
+                    smokingstatus : <input type="number" name="smokingstatus" placeholder="Enter 0 (for unknown), 1 (for formerly smoked), 2 (for never smoked), 3 (for smokers)">
+                    <input type="submit", value='predict'>
+                </b>
+            </form>
+        </center>
+    </body>
+</html>
